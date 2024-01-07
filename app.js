@@ -1,3 +1,5 @@
+// 1 project
+
 let num = 42;
 let firstName = "Oleksandr";
 const isProgrammer = true;
@@ -38,3 +40,5 @@ submitBtn.onclick = function () {
   const result = computeNumbersWithAction(input1, input2, action);
   printResult(result);
 };
+
+// 2 project
