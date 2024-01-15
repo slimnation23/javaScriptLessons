@@ -43,4 +43,9 @@ submitBtn.onclick = function () {
 
 // 2 project
 
+let i = 0;
 
+while (i < 3) {
+  console.log(i)
+  i++
+}
