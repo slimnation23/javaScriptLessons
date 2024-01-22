@@ -43,9 +43,18 @@ submitBtn.onclick = function () {
 
 // 2 project
 
-let i = 0;
-
-while (i < 3) {
-  console.log(i)
-  i++
+let menu = {
+  width: 200,
+  height: 300,
+  title: 'My menu'
 }
+
+function multiplyNumeric(obj) {
+  for (let key in obj){
+    if (typeof obj[key] == 'number') {
+      alert(obj[key] *= 2)
+    }
+  }
+}
+
+// multiplyNumeric(menu)
