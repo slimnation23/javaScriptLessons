@@ -43,18 +43,25 @@ submitBtn.onclick = function () {
 
 // 2 project
 
-let menu = {
-  width: 200,
-  height: 300,
-  title: 'My menu'
+function Calculator() {
+  (this.read = function () {
+    this.a = +prompt("a?", "");
+    this.b = +prompt("b?", "");
+  }),
+    (this.sum = function () {
+      return this.a + this.b;
+    }),
+    (this.mul = function () {
+      return this.a * this.b;
+    });
 }
 
-function multiplyNumeric(obj) {
-  for (let key in obj){
-    if (typeof obj[key] == 'number') {
-      alert(obj[key] *= 2)
-    }
+function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function() {
+    this.value += +prompt('Скільки додати?', '0')
   }
 }
 
-// multiplyNumeric(menu)
+let accumulator = new Accumulator(0);
+
