@@ -43,25 +43,4 @@ submitBtn.onclick = function () {
 
 // 2 project
 
-function Calculator() {
-  (this.read = function () {
-    this.a = +prompt("a?", "");
-    this.b = +prompt("b?", "");
-  }),
-    (this.sum = function () {
-      return this.a + this.b;
-    }),
-    (this.mul = function () {
-      return this.a * this.b;
-    });
-}
-
-function Accumulator(startingValue) {
-  this.value = startingValue;
-  this.read = function() {
-    this.value += +prompt('Скільки додати?', '0')
-  }
-}
-
-let accumulator = new Accumulator(0);
 
