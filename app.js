@@ -43,4 +43,8 @@ submitBtn.onclick = function () {
 
 // 2 project
 
+let i = 'Hello';
 
+i.test = 5;
+
+alert(i.test)
