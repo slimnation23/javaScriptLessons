@@ -43,8 +43,7 @@ submitBtn.onclick = function () {
 
 // 2 project
 
-let i = 'Hello';
-
-i.test = 5;
-
-alert(i.test)
+function extractCurrencyValue(str) {
+  return +str.slice(1);
+}
+alert(extractCurrencyValue("$120"));
